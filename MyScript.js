@@ -20,7 +20,6 @@ function gethumanchoice(){
     while (!playerchoice.includes(input)) {
         input = prompt("Invalid choice. Please enter rock, paper, or scissors:").toLowerCase();
     }
-    return input;
     console.log(input);
 
 
