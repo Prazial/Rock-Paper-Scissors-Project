@@ -1,8 +1,8 @@
 const playerchoice = ["rock", "paper", "scissors"];//declare an array of choices
 
-/*function game(){
+function game(){
   playRound();
-}*/
+}
 
 
 
@@ -17,6 +17,10 @@ function playRound(playerSelection,computerselection){
 function gethumanchoice(){
     let input = prompt("Enter your choice (rock, paper, scissors):");
     input = input.toLowerCase();
+    while (!playerchoice.includes(input)) {
+        input = prompt("Invalid choice. Please enter rock, paper, or scissors:").toLowerCase();
+    }
+    return input;
     console.log(input);
 
 
