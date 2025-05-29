@@ -1,11 +1,27 @@
-let playerchoice = ["rock", "paper", "scissors"];
-function getcomputerchoice(){
-    return playerchoice[Math.floor(Math.random() * playerchoice.length)];
+const playerchoice = ["rock", "paper", "scissors"];//declare an array of choices
+
+function game(){
+  playRound();
 }
-console.log(getcomputerchoice());
+
+
+
+function playRound(playerSelection,computerselection){
+    const playerselection = gethumanchoice();
+    const computerselection = getcomputerchoice();
+}
+
+
+
 
 function gethumanchoice(){
-    let choice = prompt("Enter your choice (rock, paper, scissors):");
-    return choice; // Recursively prompt until a valid choice is made
+    let input = prompt("Enter your choice (rock, paper, scissors):");
+    input = input.toLowerCase();
     }
 console.log(gethumanchoice());
+
+
+
+function getcomputerchoice(){
+    return playerchoice[Math.floor(Math.random() * playerchoice.length)];
+}//Get random input from the computer
