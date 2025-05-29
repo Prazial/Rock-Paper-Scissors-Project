@@ -18,7 +18,7 @@ function gethumanchoice(){
     let input = prompt("Enter your choice (rock, paper, scissors):");
     input = input.toLowerCase();
     }
-console.log(gethumanchoice());
+console.log(input);
 
 
 
