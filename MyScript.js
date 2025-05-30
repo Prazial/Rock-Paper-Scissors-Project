@@ -1,7 +1,7 @@
 const playerchoice = ["rock", "paper", "scissors"];//declare an array of choices
 
-const humanscore = 0; //initialize human score
-const computerscore = 0; //initialize computer score
+let humanscore = 0; //initialize human score
+let computerscore = 0; //initialize computer score
 
 function playRound(humanchoice,computerchoice) {
     if (humanchoice === computerchoice) {
@@ -24,7 +24,7 @@ function playRound(humanchoice,computerchoice) {
 
 function gethumanchoice(){
     let input = prompt("Enter your choice (rock, paper, scissors):");
-    return input; // Convert input to lowercase to handle case insensitivity
+    return input.toLowerCase(); // Convert input to lowercase to handle case insensitivity
 }console.log(`You chose: ${humanSelection}`);
 
 
