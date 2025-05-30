@@ -27,13 +27,7 @@ function playRound(humanchoice,computerchoice) {
 function gethumanchoice(){
     let input = prompt("Enter your choice (rock, paper, scissors):");
     input = input.toLowerCase();
-  
-   if (playerchoice.includes(input)) {
-        return input;
-    } else {
-        console.log("Invalid choice, please try again.");
-        return gethumanchoice(); // Recursively call until a valid choice is made
-    }
+    // Convert input to lowercase to handle case insensitivity
 }
 
 
