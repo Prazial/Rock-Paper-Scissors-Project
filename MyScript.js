@@ -26,7 +26,7 @@ function gethumanchoice(){
     let input = prompt("Enter your choice (rock, paper, scissors):");
     input = input.toLowerCase();
     // Convert input to lowercase to handle case insensitivity
-}console.log(`You chose: ${input}`);
+}console.log(`You chose: ${humanSelection}`);
 
 
 function getcomputerchoice(){
